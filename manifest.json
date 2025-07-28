@@ -1,0 +1,15 @@
+{
+  "name": "Spendy",
+  "short_name": "Spendy",
+  "start_url": "./index.html?v=2.6",
+  "display": "standalone",
+  "background_color": "#4CAF50",
+  "theme_color": "#4CAF50",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}

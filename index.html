@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="theme-color" content="#4CAF50" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css?v=2.6" />
+  <title>Spendy</title>
+</head>
+<body>
+  <h1>Spendy</h1>
+  <section class="container">
+    <h2>Participants</h2>
+    <input type="text" id="participantName" placeholder="Nom du participant" />
+    <button onclick="addParticipant()">Ajouter</button>
+    <ul id="participantList"></ul>
+  </section>
+  <section class="container">
+    <h2>Ajouter une dépense</h2>
+    <input type="text" id="expenseDesc" placeholder="Description" />
+    <input type="number" id="expenseAmount" placeholder="Montant (€)" />
+    <div id="expenseParts"></div>
+    <button onclick="addExpense()">Enregistrer la dépense</button>
+    <div id="expenseError" class="error"></div>
+  </section>
+  <section class="container">
+    <h2>Dépenses enregistrées</h2>
+    <ul id="expenseList"></ul>
+  </section>
+  <section class="container">
+    <h2>Soldes entre participants</h2>
+    <button onclick="calculateBalances()">Calculer les soldes</button>
+    <div id="balanceSummary" style="margin-top:1rem;"></div>
+  </section>
+  <script src="script.js?v=2.6"></script>
+</body>
+</html>
